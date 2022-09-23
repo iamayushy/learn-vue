@@ -13,6 +13,16 @@
         <img :class="gender" :src="image" alt="">
         <h3 class="name">{{firstName}} {{lastName}}</h3>
         <button @click="getRandomUser" :class="gender" class="btn">Get Random User</button>
+        <br>
+        <input type="text" @input="handleInput" >
+        <br>
+        <button @click="addToList">ADD</button>
+        <div v-for="(ls, index) in list">
+            <div>
+            <p>{{ls.message}} - {{ls.completed}}</p>
+            <button @click="updateList(index)" >Delete</button>
+        </div>
+        </div>
     </div>
     <script src="./index.js"></script>
 </body>

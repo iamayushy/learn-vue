@@ -6,7 +6,9 @@ const app = Vue.createApp({
             firstName: 'John',
             lastName: 'Smigla',
             image: 'https://randomuser.me/api/portraits/men/3.jpg',
-            gender: 'male'
+            gender: 'male',
+            list: [],
+            task: ''
         }
     },
     methods :{
@@ -18,7 +20,23 @@ const app = Vue.createApp({
             this.lastName = userData[0].name.last,
             this.gender = userData[0].gender,
             this.image = userData[0].picture.large
+        },
+
+        handleInput(e){
+            this.task = e.target.value
+        },
+        addToList(){
+            const mytask = {message: this.task, completed: false}
+            this.list.push(mytask)
+            console.log(this.list)
+        },
+        updateList(index){
+            console.log(index)
+            this.list.splice(index, 1)
+            // console.log(newList)
+            // this.list = newList
         }
+
     }
 })
 
