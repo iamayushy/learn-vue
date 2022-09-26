@@ -1,5 +1,5 @@
 ## Concepts of Vue
-## Vue follows directive syntax i.e uses the data binding attribute in the list
+## Vue follows directive syntax i.e uses the data binding attribute in an html document
 ```js
 <template>
 // It hold the component logic
