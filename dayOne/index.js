@@ -33,6 +33,7 @@ const app = Vue.createApp({
         updateList(index){
             console.log(index)
             this.list.splice(index, 1)
+            console.log("git working")
             // console.log(newList)
             // this.list = newList
         }
