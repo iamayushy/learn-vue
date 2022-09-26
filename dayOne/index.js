@@ -34,7 +34,7 @@ const app = Vue.createApp({
             console.log(index)
             this.list.splice(index, 1)
             console.log("git working")
-            // console.log(newList)
+            console.log(newList)
             // this.list = newList
         }
 
