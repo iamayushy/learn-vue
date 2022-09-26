@@ -39,7 +39,7 @@ export default {
     <div class="loader" v-if="loading"></div>
       <br>
       <br>
-    <input v-model="message" @change="getCountries(message)"  placeholder="start the world search" type="text">
+    <input v-model="message" @change="getCountries(message)"  placeholder="start the world search and press enter" type="text">
     <div class="container">
      
       <div v-if="warning === undefined" class="card" v-for="(country, index) in countryList">
