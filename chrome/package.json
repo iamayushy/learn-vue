@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "vercel": "^28.4.2",
     "vue": "^3.2.37"
   },
   "devDependencies": {
